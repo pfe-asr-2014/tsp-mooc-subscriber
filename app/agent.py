@@ -47,7 +47,7 @@ mqtt = mqtt.Client(protocol=mqtt.MQTTv31)
 with open("agent.yml", 'r') as ymlfile:
   cfg = yaml.load(ymlfile)
 
-mqtt.connect(cfg['server'], 1884)
+mqtt.connect(cfg['server'])
 mqtt.on_connect = on_connect
 mqtt.on_message = on_message
 mqtt.subscribe("mooc/")
