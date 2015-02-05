@@ -1,0 +1,3 @@
+server: "server"
+tokenurl: "http://178.62.141.74:8080/login/token.php"
+posturl: "http://178.62.141.74:8080/webservice/rest/server.php"
